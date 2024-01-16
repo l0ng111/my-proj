@@ -7,15 +7,16 @@ import
 
 const Button = () => {
     const [names, setNames] = useState("")
-    
-const handleChange = (event) => { setNames([...names,event.target.value])}
+    const [plh, setPlh] =useState("None")
+const handleChange = (event) => {setPlh(names) ; setNames([...names,event.target.value])}
  const handleEdit = () => {  }
   return (
     <div>
         <button onClick={()=>handleEdit()}>editToDO</button>
         <input
      type="text" 
-     placeholder='None'
+     placeholder={plh}
+     value={names}
     className='h-screen flex justify-center items-center'
     onChange={(event) => handleChange(event)}
      />  
