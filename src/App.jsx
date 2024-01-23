@@ -38,9 +38,11 @@ return (
 export default App*/
 import './App.css';
 
-import  { useState } from 'react';
+import React
+ ,{ useState } from 'react'
 
-import Trial from './components/trial';
+import Buoi5 from './components/buoi5'
+import Buoi4 from './components/buoi4';
 
 // biến: let, const
 // let count = 0;
@@ -159,14 +161,18 @@ function App() {
 								</div>
 								<div 
 								className='mt-4 py-2 px-4 border border-gray-500 rounded'>
-                                    <Trial/>
+                                    <Buoi5/>
+
 								</div>
+								<div><Buoi4 /></div>
 							</div>
 						);
-					})}
+						
+							})}
 				</div>
 			</div>
 		</div>
+		
 	);
 
 }
